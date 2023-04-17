@@ -25,7 +25,7 @@ def dog_cat_classifier(img, model):
     '''
     # Load the model that was saved earlier
     model = keras.models.load_model(model)
-    '''Define the array of the right shape to feed into the keras model'''
+    '''케라스 모델에 맞는 이미지 크기를 준비하고 있습니다.'''
     data = np.ndarray(shape=(1, 100, 100, 3), dtype=np.float32)
     image = img
     #resizing the image
