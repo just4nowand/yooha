@@ -46,7 +46,7 @@ uploaded_image = st.file_uploader("유재석 또는 하도영의 이미지를 �
 
 if uploaded_image is not None:
     image = Image.open(uploaded_image)
-    st.image(image, caption='업로드된 ', use_column_width=True)
+    st.image(image, caption='업로드된 파일', use_column_width=True)
     st.write("")
     st.write("분류 중입니다. 잠시만 기다려주세요...")
     label,conf = dog_cat_classifier(image, 'yooha.h5')
